@@ -1,0 +1,27 @@
+/*!
+Theme Name: Dance
+Author: Richard Lovell
+Version: 1.0.0
+*/
+.entry-content p {
+    color: green;
+}
+
+
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+  }
