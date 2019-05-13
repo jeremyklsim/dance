@@ -1,3 +1,12 @@
-nav {
+/* nav {
     background-color: rgb(214, 214, 214);
+} */
+
+.nav-collapse ul li{
+list-style: none;
+float: left;
+}
+
+.site-logo img{
+    right: 90%;
 }

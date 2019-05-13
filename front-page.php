@@ -1,4 +1,6 @@
 <?php get_header(); ?>
-<h1>Front page</h1>
+<div class="hero">
+
+</div>
 <?php get_template_part('template-parts/content');
 get_footer(); ?>

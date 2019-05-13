@@ -12,13 +12,16 @@
 
 <body <?php body_class() ?>>
     <header>
+        <div class="nav-container">
         <nav class="nav-collapse">
-           
-                <?php the_custom_logo(); ?>
-           
+           <div class="site-logo">
+            <?php the_custom_logo(); ?>
+            </div>
+            <div>
             <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
-          
+            </div>
         </nav>
+        </div>
        
         <?php if (is_page('contact')) : ?>
             <h1>I am the contact page</h1>
