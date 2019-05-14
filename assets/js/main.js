@@ -1,9 +1,11 @@
 console.log('Thank you for using Dance');
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 10) {
-        $('#navBar').addClass('floatingNav');
-    } else {
-        $('#navBar').removeClass('floatingNav');
-    }
+wp.customize( 'tcx_background_image', function( value ) {
+    value.bind( function( to ) {
+ 
+        0 === $.trim( to ).length ?
+            $( 'body' ).css( 'background-image', '' ) :
+            $( 'body' ).css( 'background-image', 'url( ' + to + ')' );
+ 
+    });
 });

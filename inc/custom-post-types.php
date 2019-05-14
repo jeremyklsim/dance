@@ -18,6 +18,23 @@ if (!function_exists('dance_create_post_types')) :
 
         )
         );
+
+        register_post_type(
+            'dance_instructor',
+            array('labels' => array(
+                'name' => __('Instructors'),
+                'singular_name' => __('Instructor')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'menu_position' => 5,
+            'supports' => array('title', 'editor', 'thumbnail'),
+            'taxonomies' => array('genres')
+            // tags
+            // 'taxonomies' => array('catgory', 'post_tag')
+
+        )
+        );
     }
 endif;
 add_action('init', 'dance_create_post_types');

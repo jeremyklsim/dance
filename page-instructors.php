@@ -1,14 +1,15 @@
 <?php get_header(); ?>
 <div class="hero">
-<h1 class="hero-text">DANCE LESSONS</h1>
+<h1 class="hero-text">Instructors</h1>
 </div>
 <div class="dance-container">
 
 </div>
 <?php
 $args = array(
-    'post_type' => 'dance_lesson',
-    'posts_per_page' => 5
+    'post_type' => 'dance_instructor',
+    'posts_per_page' => 5,
+    'order' => 'ASC'
 );
 $loop = new WP_Query($args);
 if ($loop->have_posts()) : $count = 0;
@@ -21,7 +22,7 @@ if ($loop->have_posts()) : $count = 0;
         alt="<?php echo $post->post_name; ?>" />
         </div>
         <div class="lessons-info">
-        <h2><a href="<?php echo site_url(); ?>/dance_lesson/<?php echo $post->post_name; ?>"><?php echo the_title(); ?></a>
+        <h2><?php echo the_title(); ?>
         </h2>
         <p>
             <?php $post->post_name; ?><?php echo the_content(); ?>

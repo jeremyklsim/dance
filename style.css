@@ -13,6 +13,13 @@ body{
   margin: 0;
 }
 
+.dance-container{
+  max-width: 1400px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
 a {
   text-decoration: none;
   }
@@ -78,7 +85,7 @@ a, a:visited, a:active {
 
   .hero{
     /* background-color: blue; */
-    background: url('assets/images/hero-dance.jpg');
+    /* background: url('assets/images/hero-dance.jpg'); */
     height: 560px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,10 +99,13 @@ a, a:visited, a:active {
   }
 
   .lessons{
-    padding:10px;
+    padding:20px;
     display: flex;
   }
 
+  .lessons-image {
+    padding: 20px;
+  }
 
 
   footer{
